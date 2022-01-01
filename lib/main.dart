@@ -1,18 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:shoppers_paradise/view/homepage.dart';
+import 'package:shoppers_paradise/view/loginpage.dart';
 
-void main(){
+void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Container(
-      child: Text('HEllO world!!! I M BACK'),
-    ),
+      themeMode: ThemeMode.light,
+      theme: ThemeData(
+          // primarySwatch: Colors.amber,
+          ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+      ),
+      routes: {
+        "/": (context) => LoginPage(),
+        "/Home": (context) => HomePage(),
+        "/Login": (context) => LoginPage(),
+      },
     );
   }
 }
