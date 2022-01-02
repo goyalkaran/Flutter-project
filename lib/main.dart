@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shoppers_paradise/view/homepage.dart';
 import 'package:shoppers_paradise/view/loginpage.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,8 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       themeMode: ThemeMode.light,
       theme: ThemeData(
-          // primarySwatch: Colors.amber,
-          ),
+        // primarySwatch: Colors.amber,
+        fontFamily: GoogleFonts.lato().fontFamily,
+        // primaryTextTheme: GoogleFonts.latoTextTheme(),
+      ),
       darkTheme: ThemeData(
         brightness: Brightness.dark,
       ),
