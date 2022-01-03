@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shoppers_paradise/widgets/drawer.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -12,10 +13,10 @@ class HomePage extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          child: const Text("hello world I AM BACK AGAIN!!!"),
+          child: Text("hello world I AM BACK AGAIN!!!"),
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
