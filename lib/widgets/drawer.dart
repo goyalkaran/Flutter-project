@@ -11,8 +11,10 @@ class MyDrawer extends StatelessWidget {
 
     return Drawer(
         child: Container(
+
       color: Colors.teal,
       child: ListView(
+
         padding: EdgeInsets.zero,
         children: [
           DrawerHeader(
