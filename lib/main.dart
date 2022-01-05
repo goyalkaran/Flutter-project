@@ -3,6 +3,7 @@ import 'package:shoppers_paradise/util/routes.dart';
 import 'package:shoppers_paradise/view/homepage.dart';
 import 'package:shoppers_paradise/view/loginpage.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:shoppers_paradise/widgets/theme.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,14 +14,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       themeMode: ThemeMode.light,
-      theme: ThemeData(
-        primarySwatch: Colors.teal,
-        fontFamily: GoogleFonts.lato().fontFamily,
-        // primaryTextTheme: GoogleFonts.latoTextTheme(),
-      ),
-      darkTheme: ThemeData(
-        brightness: Brightness.dark,
-      ),
+
+      theme: MyTheme.lightTheme(context),
+      darkTheme: MyTheme.darkTheme(context),
+
       initialRoute: MyRoutes.homeRoute,
       routes: {
         "/": (context) => LoginPage(),
@@ -28,5 +25,6 @@ class MyApp extends StatelessWidget {
         MyRoutes.loginRoute: (context) => LoginPage(),
       },
     );
+
   }
 }
