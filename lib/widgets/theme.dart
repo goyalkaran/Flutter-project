@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class MyTheme {
@@ -10,10 +12,13 @@ class MyTheme {
           iconTheme: IconThemeData(
             color: Colors.black,
           ),
-          elevation: 0.0,
+          // elevation: 0.0,
           toolbarTextStyle: Theme.of(context).textTheme.headline1,
           titleTextStyle: Theme.of(context).textTheme.bodyText1,
-
+          shape: RoundedRectangleBorder(
+            borderRadius:
+                BorderRadius.vertical(bottom: Radius.elliptical(15, 10)),
+          ),
         ),
       );
 

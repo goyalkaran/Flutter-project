@@ -77,6 +77,7 @@ class _LoginPageState extends State<LoginPage> {
                       onChanged: (value) {
                         name = value;
                         setState(() {});
+
                       },
                     ),
                     TextFormField(
