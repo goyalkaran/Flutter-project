@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "452023212617",
+    "project_id": "shoppers-paradice",
+    "storage_bucket": "shoppers-paradice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452023212617:android:873d225b54a2804d35fd98",
+        "android_client_info": {
+          "package_name": "com.example.shoppers_paradise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452023212617-ut4na5dg87k56ihofdt1qiv5tipe925f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAlmy2cQu56y25kO17kpUWMzGdOaBHmKk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452023212617-ut4na5dg87k56ihofdt1qiv5tipe925f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
